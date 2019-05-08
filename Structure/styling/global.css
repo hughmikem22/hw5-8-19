@@ -1,0 +1,18 @@
+h1{
+
+    color: white;
+    background:aqua;
+}
+.scorpionBG {
+background-image: url('bopped.jpg')
+}
+
+@keyframes colorchange
+{
+  0%   {background: rgb(23, 103, 122);}
+  10%  {background: rgb(0, 255, 157);}
+  25% {background:rgb(23, 103, 122);}
+ 50% {background: rgb(224, 190, 136);}
+ 75%  {background: rgb(220, 50, 138);}
+ 100% {background: rgb(224, 196, 36);}
+}

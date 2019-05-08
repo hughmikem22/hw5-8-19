@@ -1,0 +1,130 @@
+body {
+    animation: colorchange 50s;
+    animation-iteration-count: infinite;
+}
+@keyframes colorchange
+{
+  0%   {background: rgb(23, 103, 122);}
+  10%  {background: rgb(0, 255, 157);}
+  25% {background:rgb(23, 103, 122);}
+ 50% {background: rgb(224, 190, 136);}
+ 75%  {background: rgb(220, 50, 138);}
+ 100% {background: rgb(224, 196, 36);}
+}
+.floatbutton{
+    padding:10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 2px;
+    color: white;
+    background-color: red;
+    position: relative;
+    animation: switch;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    
+    
+    }
+    
+    @keyframes switch {
+        0%{background-color: rgb(175, 240, 203);}
+        25%{ background-color: tomato;}
+        50%{ background-color: goldenrod;}
+        75%{ background-color: maroon;}
+        100%{ background-color: green;}
+    }
+    .floatbutton:hover{
+        color: rgb(255, 0, 200);
+        transition: 0.3ms, ease-in-out;
+        transform: scale(1.13), scaleX(-10); 
+    }
+    .homebutton{
+        padding:10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 2px;
+    color: white;
+    background-color: red;
+    position: relative;
+    animation: twitch;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    
+    }
+    
+    @keyframes twitch {
+        0%{background-color: rgb(73, 90, 81);}
+        25%{ background-color: rgb(71, 83, 255);}
+        50%{ background-color: rgb(150, 142, 122);}
+        75%{ background-color: rgb(106, 113, 209);}
+        100%{ background-color: rgb(224, 196, 36);}
+    }
+    .homebutton:hover{
+        color: rgb(255, 0, 200);
+        transition: 0.3ms, ease-in-out;
+        transform: scale(1.23);
+        
+    }
+    .aboutmebutton{
+        padding:10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 2px;
+    color: white;
+    background-color: red;
+    position: relative;
+    animation: glitch;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    
+    }
+    
+    @keyframes glitch {
+        0%{background-color: rgb(212, 235, 223);}
+        25%{ background-color: rgb(3, 10, 95);}
+        50%{ background-color: rgb(78, 60, 15);}
+        75%{ background-color: rgb(152, 209, 106);}
+        100%{ background-color: rgb(224, 196, 36);}
+    }
+    .aboutmebutton:hover{
+        color: rgb(255, 0, 200);
+        transition: 0.3ms, ease-in-out;
+        transform: scaleX(-1); 
+    }
+    nav a{
+        background-color: black;
+        color: whitesmoke;
+        font-size: 15px;
+        font-family: fantasy;
+        border: none;
+        padding: 30px 45px;
+        text-align: center;
+        margin: 4px 2px;
+        transition: 0.3s;
+      }
+    i:hover{
+        transform: scaleX(-1);
+        transition: 0.35ms, ease-in-out;
+    }
+    @media (min-width: 990px) {
+        .desktop-only {
+            display:inline-block !important;
+            color: antiquewhite;
+        }
+        .mobile-only {
+            display: none;
+        }
+    }
+    
+    @media (max-width: 980px) {
+        .desktop-only {
+            
+            display: flex;
+    flex-direction: column;
+        }
+    
+        .mobile-only {
+            display: inline-block;
+            color: bisque;
+        }
+    }
